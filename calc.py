@@ -59,7 +59,10 @@ class Calc(BoxLayout):
         self.equation = self.equation[:-1]
         if self.equation != "" and self.equation[-1] == " ":
             self.equation = self.equation[:-1]
-        
+        last_value = self.equation.split(" ")[-1]
+        if "e" in last_value:
+            if last_value[-1] == "+" or last_value[-1] == "-" and last_value[-2] == "e":
+                self.equation = self.equation[:-2]
         if self.equation != "":
             if self.equation[-1] in self.operations:
                 self.closing_brackets = False
@@ -211,10 +214,14 @@ class Calc(BoxLayout):
             for i in range(self.bracket_counter):
                 fixed += ")"
         print(fixed)
-        total = str(eval(fixed))
+        total = eval(fixed)
         if float(total).is_integer():
-            total = str(int(float(total)))
-        self.equate_to_lb.text = total
+            total = int(float(total))
+
+        if len(str(total)) >= 14:
+            total = "{:.4e}".format(total)
+        print(total)
+        self.equate_to_lb.text = str(total)
 
     def equals(self):
         if self.equate_to_lb.text != "":
@@ -252,5 +259,5 @@ class CalcApp(App):
     def build(self):
         return Calc()
 
-
-CalcApp().run()
+if __name__ in "__main__":
+    CalcApp().run()
