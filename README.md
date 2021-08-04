@@ -2,7 +2,7 @@
 
 This is a very basic calculator with similar UI as the android calculator.
 
-Despite it being fully functional, there are some aspects I wish to add or clean up. for instance, when the evaluation gets too large, it shifts and shows only a few of the total values. This could be fixed by adding scientific notations. 
+Despite it being fully functional, there are some aspects I wish to add or clean up
 
 #Display
 
