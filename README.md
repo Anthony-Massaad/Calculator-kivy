@@ -10,5 +10,8 @@ Despite it being fully functional, there are some aspects I wish to add or clean
 
 ![image](https://user-images.githubusercontent.com/62800170/128107777-dc6dfee8-f6f7-4a75-978d-5f7854f468b2.png)
 
+## Author
 
-@copyright Anthony Massaad
+Anthony Massaad
+
+@copyright @ 2020. All Rights Reserved
