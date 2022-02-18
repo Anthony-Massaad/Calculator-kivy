@@ -1,17 +1,21 @@
 # Calculator-kivy
 
-This is a very basic calculator with similar UI as the android calculator. 
+Basic calculator GUI using the module Kivy to build the framework.
 
-crazy amount of print statements everywhere since debugging was quite the challenge.
+<p align="center">
+  <h3> Sample Image </h3>
+  <img src="https://user-images.githubusercontent.com/62800170/128107777-dc6dfee8-f6f7-4a75-978d-5f7854f468b2.png" width="30%"/>
+</p>
 
-Despite it being fully functional, there are some aspects I wish to add or clean up
+## Requirements
 
-#Display
+```pip install kivy```
 
-![image](https://user-images.githubusercontent.com/62800170/128107777-dc6dfee8-f6f7-4a75-978d-5f7854f468b2.png)
+## Future Improvements
+- Keyboard bindings. Allow to input through the use of keyboard input. 
 
 ## Author
 
 Anthony Massaad
 
-@copyright @ 2020. All Rights Reserved
+@Copyright @ 2020. All Rights Reserved
